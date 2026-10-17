@@ -1,0 +1,53 @@
+{
+  "meta": {
+    "description": "FASE 6 — Forja estelar (nucleossíntese) e fissão nuclear (modos de jogo).",
+    "units": { "q_mev": "MeV por reação" },
+    "atomic_masses_u": { "H1": 1.007825032, "He4": 4.002603254, "C12": 12.0, "u_to_mev": 931.494102 },
+    "note": "Q usa massas atômicas (a aniquilação dos pósitrons do decaimento β⁺ já está incluída)."
+  },
+  "pp_chain": {
+    "name": "Cadeia próton-próton",
+    "equation": "4 p → He-4 + 2e⁺ + 2νₑ + energia",
+    "q_mev": 26.73,
+    "steps": [
+      "p + p → D + e⁺ + νₑ",
+      "D + p → He-3 + γ",
+      "He-3 + He-4 → Be-7 + γ",
+      "Be-7 + e⁻ → Li-7 + νₑ",
+      "Li-7 + p → 2 He-4"
+    ]
+  },
+  "triple_alpha": {
+    "name": "Processo triplo-alfa",
+    "equation": "3 He-4 → C-12",
+    "q_mev": 7.275,
+    "hoyle_state_mev": 7.65,
+    "note": "O carbono só se forma porque o estado de Hoyle do C-12 fica a 7,65 MeV acima do fundamental, ressonando com 3 partículas alfa."
+  },
+  "fusion_ladder": [
+    { "id": "h_he", "equation": "4 H → He-4", "q_mev": 26.73, "product": "He-4" },
+    { "from": "He", "to": "C", "equation": "3 He-4 → C-12 (triplo-alfa)", "q_mev": 7.275, "product": "C-12" },
+    { "name": "Carbono → Oxigênio", "equation": "C-12 + He-4 → O-16 + γ", "q_mev": 7.16, "q_per_nucleon_addition": true },
+    { "name": "Oxigênio → Neônio", "equation": "O-16 + He-4 → Ne-20 + γ", "q_mev": 4.73 },
+    { "name": "Neônio → Magnésio", "equation": "Ne20 + He4 → Mg24", "q_mev": 9.31 },
+    { "name": "Silício → Ferro", "equation": "2 Si-28 → Ni-56 → Fe-56 (cadeia de queima de silício)", "q_mev": 0.0 },
+    { "from": "H", "to": "Fe", "element": "Fe-56", "binding_per_a_mev": 8.79 }
+  ],
+  "fission": {
+    "equation": "n + U-235 → Ba-141 + Kr-92 + 3n",
+    "q_mev": 200.0,
+    "note": "~200 MeV por fissão, distribuídos entre fragmentos, nêutrons, raios γ, neutrinos e decaimentos β dos fragmentos."
+  },
+  "nucleosynthesis_processes": {
+    "s_process": {
+      "name": "Processo s (lento)",
+      "site": "estrelas AGB",
+      "description": "Captura de nêutrons lenta o suficiente para o núcleo decair β entre capturas. Cria elementos até o bismuto."
+    },
+    "r_process": {
+      "name": "Processo r (rápido)",
+      "site": "supernovas e fusões de estrelas de nêutrons",
+      "description": "Captura de nêutrons rapidíssima: núcleos capturam nêutrons antes de decair. Sintetiza o ouro, a platina e o urânio."
+    }
+  }
+}

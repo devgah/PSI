@@ -1,0 +1,44 @@
+{
+  "meta": {
+    "source": "Particle Data Group (PDG) — Review of Particle Physics",
+    "citation": "PDG 2024 (https://pdg.lbl.gov). Massas em MeV/c²; quarks leves são massas de corrente (MS-bar).",
+    "units": { "mass_mev": "MeV/c²", "charge_e3": "carga em unidades de e/3", "baryon_e3": "número bariônico em unidades de 1/3", "spin2": "2J (inteiro)" },
+    "note": "Partículas elementares são pontuais no Modelo Padrão; cores dos quarks são rótulos de carga de cor, não cores ópticas."
+  },
+  "quarks": {
+    "u": { "name": "up", "generation": 1, "charge_e3": 2, "mass_mev": 2.16, "spin2": 1, "baryon_e3": 1, "strangeness": 0, "charm": 0, "bottomness": 0, "topness": 0 },
+    "u_bar": { "name": "anti-up", "generation": 1, "charge_e3": -2, "mass_mev": 2.16, "spin2": 1, "baryon_e3": -1, "strangeness": 0, "charm": 0, "bottomness": 0, "topness": 0 },
+    "d": { "name": "down", "generation": 1, "charge_e3": -1, "mass_mev": 4.67, "spin2": 1, "baryon_e3": 1, "strangeness": 0, "charm": 0, "bottomness": 0, "topness": 0 },
+    "d_bar": { "name": "anti-down", "generation": 1, "charge_e3": 1, "mass_mev": 4.67, "spin2": 1, "baryon_e3": -1, "strangeness": 0, "charm": 0, "bottomness": 0, "topness": 0 },
+    "s": { "name": "strange", "generation": 2, "charge_e3": -1, "mass_mev": 93.4, "spin2": 1, "baryon_e3": 1, "strangeness": -1, "charm": 0, "bottomness": 0, "topness": 0 },
+    "s_bar": { "name": "anti-strange", "generation": 2, "charge_e3": 1, "mass_mev": 93.4, "spin2": 1, "baryon_e3": -1, "strangeness": 1, "charm": 0, "bottomness": 0, "topness": 0 },
+    "c": { "name": "charm", "generation": 2, "charge_e3": 2, "mass_mev": 1270.0, "spin2": 1, "baryon_e3": 1, "strangeness": 0, "charm": 1, "bottomness": 0, "topness": 0 },
+    "c_bar": { "name": "anti-charm", "generation": 2, "charge_e3": -2, "mass_mev": 1270.0, "spin2": 1, "baryon_e3": -1, "strangeness": 0, "charm": -1, "bottomness": 0, "topness": 0 },
+    "b": { "name": "bottom", "generation": 3, "charge_e3": -1, "mass_mev": 4180.0, "spin2": 1, "baryon_e3": 1, "strangeness": 0, "charm": 0, "bottomness": -1, "topness": 0 },
+    "b_bar": { "name": "anti-bottom", "generation": 3, "charge_e3": 1, "mass_mev": 4180.0, "spin2": 1, "baryon_e3": -1, "strangeness": 0, "charm": 0, "bottomness": 1, "topness": 0 },
+    "t": { "name": "top", "generation": 3, "charge_e3": 2, "mass_mev": 172700.0, "spin2": 1, "baryon_e3": 1, "strangeness": 0, "charm": 0, "bottomness": 0, "topness": 1 },
+    "t_bar": { "name": "anti-top", "generation": 3, "charge_e3": -2, "mass_mev": 172700.0, "spin2": 1, "baryon_e3": -1, "strangeness": 0, "charm": 0, "bottomness": 0, "topness": -1 }
+  },
+  "leptons": {
+    "e-": { "name": "elétron", "generation": 1, "charge_e3": -3, "mass_mev": 0.51099895, "spin2": 1, "le": 1, "lmu": 0, "ltau": 0 },
+    "e+": { "name": "pósitron", "generation": 1, "charge_e3": 3, "mass_mev": 0.51099895, "spin2": 1, "le": -1, "lmu": 0, "ltau": 0 },
+    "nu_e": { "name": "neutrino eletrônico", "generation": 1, "charge_e3": 0, "mass_mev": 0.0, "spin2": 1, "le": 1, "lmu": 0, "ltau": 0 },
+    "nu_e_bar": { "name": "anti-neutrino eletrônico", "generation": 1, "charge_e3": 0, "mass_mev": 0.0, "spin2": 1, "le": -1, "lmu": 0, "ltau": 0 },
+    "mu-": { "name": "múon", "generation": 2, "charge_e3": -3, "mass_mev": 105.6583755, "spin2": 1, "le": 0, "lmu": 1, "ltau": 0 },
+    "mu+": { "name": "anti-múon", "generation": 2, "charge_e3": 3, "mass_mev": 105.6583755, "spin2": 1, "le": 0, "lmu": -1, "ltau": 0 },
+    "nu_mu": { "name": "neutrino muônico", "generation": 2, "charge_e3": 0, "mass_mev": 0.0, "spin2": 1, "le": 0, "lmu": 1, "ltau": 0 },
+    "nu_mu_bar": { "name": "anti-neutrino muônico", "generation": 2, "charge_e3": 0, "mass_mev": 0.0, "spin2": 1, "le": 0, "lmu": -1, "ltau": 0 },
+    "tau-": { "name": "tau", "generation": 3, "charge_e3": -3, "mass_mev": 1776.86, "spin2": 1, "le": 0, "lmu": 0, "ltau": 1 },
+    "tau+": { "name": "anti-tau", "generation": 3, "charge_e3": 3, "mass_mev": 1776.86, "spin2": 1, "le": 0, "lmu": 0, "ltau": -1 },
+    "nu_tau": { "name": "neutrino tauônico", "generation": 3, "charge_e3": 0, "mass_mev": 0.0, "spin2": 1, "le": 0, "lmu": 0, "ltau": 1 },
+    "nu_tau_bar": { "name": "anti-neutrino tauônico", "generation": 3, "charge_e3": 0, "mass_mev": 0.0, "spin2": 1, "le": 0, "lmu": 0, "ltau": -1 }
+  },
+  "bosons": {
+    "gamma": { "name": "fóton", "charge_e3": 0, "mass_mev": 0.0, "spin2": 2, "color": "none" },
+    "g": { "name": "glúon", "charge_e3": 0, "mass_mev": 0.0, "spin2": 2, "color": "octet" },
+    "W+": { "name": "bóson W+", "charge_e3": 3, "mass_mev": 80377.0, "spin2": 2, "color": "none" },
+    "W-": { "name": "bóson W-", "charge_e3": -3, "mass_mev": 80377.0, "spin2": 2, "color": "none" },
+    "Z0": { "name": "bóson Z0", "charge_e3": 0, "mass_mev": 91187.6, "spin2": 2, "color": "none" },
+    "H": { "name": "bóson de Higgs", "charge_e3": 0, "mass_mev": 125250.0, "spin2": 0, "color": "none" }
+  }
+}

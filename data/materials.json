@@ -1,0 +1,87 @@
+{
+  "meta": {
+    "source": "Materiais e interações fracas",
+    "citation": "Band gaps e propriedades: dados de referência; energia de ligações fracas: faixas típicas de físico-química",
+    "units": { "band_gap_ev": "eV", "density_g_cm3": "g/cm³" }
+  },
+  "materials": {
+    "diamante": {
+      "name": "Diamante", "formula": "C", "structure": "rede covalente sp³ (tetraédrica)",
+      "bonding": "covalente apolar", "band_gap_ev": 5.47, "conduction": "isolante",
+      "density_g_cm3": 3.51, "hardness": "muito duro (Mohs 10)",
+      "note": "Carbono sp³: cada átomo liga-se a 4 vizinhos; rede rígida 3D."
+    },
+    "grafite": {
+      "name": "Grafite", "formula": "C", "structure": "camadas sp² empilhadas",
+      "bonding": "covalente apolar + van der Waals entre camadas", "band_gap_ev": 0.0,
+      "conduction": "condutor (semimetal)", "density_g_cm3": 2.27,
+      "hardness": "mole (camadas deslizam)",
+      "note": "Carbono sp²: elétrons π deslocalizados conduzem; camadas ligadas por van der Waals."
+    },
+    "grafeno": {
+      "name": "Grafeno", "formula": "C", "structure": "monocamada hexagonal sp²",
+      "bonding": "covalente apolar", "band_gap_ev": 0.0,
+      "conduction": "condutor (alta mobilidade)", "density_g_cm3": 2.27,
+      "hardness": "muito resistente",
+      "note": "Uma única camada de grafite; elétrons se comportam como férmions de Dirac sem massa."
+    },
+    "silicio": {
+      "name": "Silício", "formula": "Si", "structure": "rede covalente sp³ (diamante)",
+      "bonding": "covalente apolar", "band_gap_ev": 1.12,
+      "conduction": "semicondutor intrínseco", "density_g_cm3": 2.33,
+      "hardness": "quebradiço",
+      "note": "Mesma estrutura do diamante, mas gap menor — base da eletrônica."
+    },
+    "silicio_n": {
+      "name": "Silício dopado n", "formula": "Si:P", "structure": "rede sp³ + doador (P)",
+      "bonding": "covalente apolar (dopagem)", "band_gap_ev": 1.12,
+      "conduction": "semicondutor tipo n (elétrons)", "density_g_cm3": 2.33,
+      "hardness": "quebradiço",
+      "note": "Fósforo doa elétrons à banda de condução → transistores."
+    },
+    "silicio_p": {
+      "name": "Silício dopado p", "formula": "Si:B", "structure": "rede sp³ + aceitador (B)",
+      "bonding": "covalente apolar (dopagem)", "band_gap_ev": 1.12,
+      "conduction": "semicondutor tipo p (buracos)", "density_g_cm3": 2.33,
+      "hardness": "quebradiço",
+      "note": "Boro cria buracos (portadores positivos) na banda de valência."
+    },
+    "cloreto_sodio": {
+      "name": "Cloreto de sódio", "formula": "NaCl", "structure": "retículo iônico cúbico",
+      "bonding": "iônica", "band_gap_ev": 8.5, "conduction": "isolante (eletrólito fundido)",
+      "density_g_cm3": 2.16, "hardness": "quebradiço",
+      "note": "Sódio (metal reativo) + cloro (gás tóxico) → sal inerte: emergência iônica."
+    },
+    "cobre": {
+      "name": "Cobre", "formula": "Cu", "structure": "rede metálica (mar de elétrons)",
+      "bonding": "metálica", "band_gap_ev": 0.0, "conduction": "condutor (excelente)",
+      "density_g_cm3": 8.96, "hardness": "dúctil",
+      "note": "Ligação metálica: elétrons deslocalizados em banda de condução."
+    },
+    "ferro": {
+      "name": "Ferro", "formula": "Fe", "structure": "rede metálica (CCC)",
+      "bonding": "metálica", "band_gap_ev": 0.0, "conduction": "condutor (ferromagnético)",
+      "density_g_cm3": 7.87, "hardness": "duro e maleável",
+      "note": "Momentos magnéticos alinhados → ferromagnetismo."
+    },
+    "agua_liquida": {
+      "name": "Água (líquida)", "formula": "H₂O", "structure": "moléculas + rede de pontes de H",
+      "bonding": "covalente polar + pontes de hidrogênio", "band_gap_ev": 6.9,
+      "conduction": "isolante", "density_g_cm3": 1.0,
+      "hardness": "—",
+      "note": "Pontes de hidrogênio explicam ponto de ebulição, densidade e solvente universal."
+    }
+  },
+  "weak_interactions": {
+    "van_der_waals": {
+      "name": "Forças de van der Waals",
+      "energy_kj_range": [0.4, 4.0],
+      "description": "Atração dipolo-dipolo induzida; mantém camadas de grafite e gases nobres líquidos."
+    },
+    "ponte_hidrogenio": {
+      "name": "Pontes de hidrogênio",
+      "energy_kj_range": [4.0, 30.0],
+      "description": "Interação direcional H···O/N/F; estrutura a água líquida e o DNA."
+    }
+  }
+}

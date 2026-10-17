@@ -1,0 +1,47 @@
+{
+  "meta": {
+    "description": "FASE 6 — Colapso gravitacional e matéria degenerada (modos de jogo).",
+    "constants_source": "CODATA 2018 (G, c, ħ, k_B); IAU (M☉, R☉).",
+    "units": { "mass_msun": "massas solares", "radius_km": "km", "density_kg_m3": "kg/m³", "temperature_k": "K", "energy_mev": "MeV" }
+  },
+  "constants": {
+    "G": 6.67430e-11,
+    "c": 2.99792458e8,
+    "hbar": 1.054571817e-34,
+    "k_b": 1.380649e-23,
+    "m_sun_kg": 1.98892e30,
+    "r_sun_km": 696340.0,
+    "chandrasekhar_msun": 1.44,
+    "tov_msun": 2.2,
+    "nuclear_density_kg_m3": 2.3e17,
+    "qgp_temperature_k": 2.0e12,
+    "qgp_energy_mev": 155.0,
+    "wd_radius_ref_rsun": 0.0126,
+    "ns_radius_km": 11.0,
+    "white_dwarf_electron_mu_e": 2.0
+  },
+  "states": {
+    "ana_branca": {
+      "name": "Anã Branca",
+      "supported_by": "pressão de degenerescência eletrônica (Princípio de Pauli)",
+      "mass_range": [0.0, 1.44],
+      "description": "Núcleos de carbono/oxigênio mergulhados num mar de elétrons degenerados. Sustentada até o limite de Chandrasekhar (~1,4 M☉). Tamanho da Terra, massa do Sol."
+    },
+    "estrela_neutrons": {
+      "name": "Estrela de Nêutrons",
+      "supported_by": "pressão de degenerescência de nêutrons e força nuclear forte",
+      "mass_range": [1.44, 2.2],
+      "description": "Acima de 1,4 M☉ os elétrons são capturados (p + e⁻ → n + νₑ): a matéria vira um fluido nuclear a ~10¹⁷ kg/m³. Sustentada até o limite TOV (~2,2–2,3 M☉)."
+    },
+    "buraco_negro": {
+      "name": "Buraco Negro",
+      "supported_by": "nenhuma — colapso do espaço-tempo",
+      "mass_range": [2.2, 1000.0],
+      "description": "Acima do limite TOV nenhuma força conhecida sustenta o objeto: ele colapsa em um buraco negro de raio de Schwarzschild r_s = 2GM/c², do qual nem a luz escapa."
+    }
+  },
+  "qgp": {
+    "name": "Plasma de Quarks e Glúons (QGP)",
+    "description": "Acima de ~155 MeV (~2×10¹² K) os hádrons se dissolvem numa sopa de quarks e glúons desconfinados — o estado da matéria logo após o Big Bang, recriado no RHIC e no LHC."
+  }
+}

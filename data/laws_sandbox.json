@@ -1,0 +1,19 @@
+{
+  "meta": {
+    "description": "FASE 8 — Sandbox de leis: alterar constantes fundamentais e observar consequências.",
+    "units": { "scale": "1.0 = valor real", "energy_ev": "eV", "length_ang": "Å", "energy_mev": "MeV" }
+  },
+  "baseline": {
+    "alpha": 0.0072973525693,
+    "rydberg_ev": 13.605693122994,
+    "bohr_ang": 0.529177210903,
+    "deuteron_binding_mev": 2.224,
+    "critical_strong_scale": 0.8
+  },
+  "scenarios": {
+    "estrelas": "A fusão estelar depende do dêuteron (2H). Se a força forte for fraca demais, o dêuteron não se liga e nenhuma estrela acende.",
+    "quimica": "A energia de ionização (Rydberg) escala com α²·mₑ. α maior → átomos menores e mais ligados; α menor → átomos frouxos.",
+    "estrutura_fina": "O desdobramento de estrutura fina escala com α⁴ — o efeito cresce rapidamente com α.",
+    "nota": "Modelos qualitativos com base em escalas reais; servem para explorar 'física alternativa', não são simulações ab initio."
+  }
+}

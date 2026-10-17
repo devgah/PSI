@@ -1,0 +1,73 @@
+{
+  "meta": {
+    "source": "Dados termoquímicos de referência",
+    "citation": "NIST Chemistry WebBook; valores padrão a 298,15 K (ΔH°f, S°); energias de ativação típicas",
+    "units": { "dh_kj": "kJ/mol (por reação balanceada)", "ds_j_k": "J/(mol·K)", "ea_kj": "kJ/mol" },
+    "gas_constant_j_mol_k": 8.31446261815324
+  },
+  "reactions": {
+    "H2_F2_HF": {
+      "name": "Formação do fluoreto de hidrogênio",
+      "equation": "H₂ + F₂ → 2 HF",
+      "dh_kj": -546.6, "ds_j_k": 14.1, "ea_kj": 5.0,
+      "catalyst": "", "ea_catalyzed_kj": null,
+      "note": "Altamente exotérmica e espontânea; reação explosiva."
+    },
+    "H2_O2_H2O_gas": {
+      "name": "Síntese da água (vapor)",
+      "equation": "H₂ + ½ O₂ → H₂O(g)",
+      "dh_kj": -241.8, "ds_j_k": -44.5, "ea_kj": 210.0,
+      "catalyst": "Platina (Pt)", "ea_catalyzed_kj": 60.0,
+      "note": "Espontânea (ΔG < 0) mas com barreira de ativação — precisa de faísca/catalisador."
+    },
+    "H2_O2_H2O_liq": {
+      "name": "Síntese da água (líquida)",
+      "equation": "2 H₂ + O₂ → 2 H₂O(l)",
+      "dh_kj": -571.6, "ds_j_k": -326.8, "ea_kj": 210.0,
+      "catalyst": "Platina (Pt)", "ea_catalyzed_kj": 60.0,
+      "note": "Reação da pilha a hidrogênio: grande liberação de energia por mol."
+    },
+    "N2_H2_NH3": {
+      "name": "Síntese de Haber-Bosch",
+      "equation": "N₂ + 3 H₂ → 2 NH₃",
+      "dh_kj": -92.4, "ds_j_k": -198.7, "ea_kj": 230.0,
+      "catalyst": "Ferro (Fe) + K₂O", "ea_catalyzed_kj": 100.0,
+      "note": "ΔG < 0 a baixa temperatura, mas a cinética exige catalisador; a alta T o ΔG fica > 0 (Le Chatelier)."
+    },
+    "CH4_combustao": {
+      "name": "Combustão do metano",
+      "equation": "CH₄ + 2 O₂ → CO₂ + 2 H₂O(g)",
+      "dh_kj": -802.3, "ds_j_k": -5.3, "ea_kj": 200.0,
+      "catalyst": "", "ea_catalyzed_kj": null,
+      "note": "Muito exotérmica; barreira de ativação vencida por ignição."
+    },
+    "diamante_grafite": {
+      "name": "Transição diamante → grafite",
+      "equation": "C(diamante) → C(grafite)",
+      "dh_kj": -1.9, "ds_j_k": 3.4, "ea_kj": 500.0,
+      "catalyst": "", "ea_catalyzed_kj": null,
+      "note": "Termodinamicamente espontânea (ΔG < 0), mas cineticamente travada a 298 K — diamante é metaestável."
+    },
+    "Na_Cl2_NaCl": {
+      "name": "Formação do sal de cozinha",
+      "equation": "2 Na + Cl₂ → 2 NaCl",
+      "dh_kj": -822.0, "ds_j_k": -181.5, "ea_kj": 30.0,
+      "catalyst": "", "ea_catalyzed_kj": null,
+      "note": "Sódio metálico + cloro tóxico → sal inerte: propriedade emergente da ligação iônica."
+    },
+    "N2_O2_NO": {
+      "name": "Formação do óxido nítrico",
+      "equation": "½ N₂ + ½ O₂ → NO",
+      "dh_kj": 90.25, "ds_j_k": 12.4, "ea_kj": 320.0,
+      "catalyst": "Platina (Pt)", "ea_catalyzed_kj": 150.0,
+      "note": "Endotérmica; espontânea apenas acima de T ≈ 7.300 K (motores e relâmpagos)."
+    },
+    "agua_vaporizacao": {
+      "name": "Vaporização da água",
+      "equation": "H₂O(l) → H₂O(g)",
+      "dh_kj": 40.7, "ds_j_k": 109.0, "ea_kj": 40.7,
+      "catalyst": "", "ea_catalyzed_kj": null,
+      "note": "ΔG = 0 em T ≈ 373 K (100 °C): ponto de ebulição emerge de T = ΔH/ΔS."
+    }
+  }
+}

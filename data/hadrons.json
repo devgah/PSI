@@ -1,0 +1,36 @@
+{
+  "meta": {
+    "source": "Particle Data Group (PDG) — Review of Particle Physics",
+    "citation": "PDG 2024 (https://pdg.lbl.gov). Massas em MeV/c²; J^P conforme PDG.",
+    "units": { "mass_mev": "MeV/c²", "lifetime_s": "segundos (null = estável no Modelo Padrão)", "spin2": "2J (inteiro)" },
+    "content_note": "content = lista de quarks/antiquarks; token com sufixo _bar denota a antipartícula.",
+    "note": "Antipartículas de hádrons são geradas automaticamente pelo carregador de dados."
+  },
+  "hadrons": {
+    "proton": { "name": "próton", "symbol": "p", "content": ["u", "u", "d"], "mass_mev": 938.27208, "spin2": 1, "jpi": "1/2+", "lifetime_s": null, "sector": "bárion" },
+    "neutron": { "name": "nêutron", "symbol": "n", "content": ["u", "d", "d"], "mass_mev": 939.56542, "spin2": 1, "jpi": "1/2+", "lifetime_s": 878.4, "sector": "bárion" },
+    "lambda0": { "name": "Lambda", "symbol": "Λ0", "content": ["u", "d", "s"], "mass_mev": 1115.683, "spin2": 1, "jpi": "1/2+", "lifetime_s": 2.632e-10, "sector": "bárion" },
+    "sigma+": { "name": "Sigma+", "symbol": "Σ+", "content": ["u", "u", "s"], "mass_mev": 1189.37, "spin2": 1, "jpi": "1/2+", "lifetime_s": 8.018e-11, "sector": "bárion" },
+    "sigma0": { "name": "Sigma0", "symbol": "Σ0", "content": ["u", "d", "s"], "mass_mev": 1192.642, "spin2": 1, "jpi": "1/2+", "lifetime_s": 7.4e-20, "sector": "bárion" },
+    "sigma-": { "name": "Sigma-", "symbol": "Σ-", "content": ["d", "d", "s"], "mass_mev": 1197.449, "spin2": 1, "jpi": "1/2+", "lifetime_s": 1.479e-10, "sector": "bárion" },
+    "xi0": { "name": "Xi0", "symbol": "Ξ0", "content": ["u", "s", "s"], "mass_mev": 1314.86, "spin2": 1, "jpi": "1/2+", "lifetime_s": 2.90e-10, "sector": "bárion" },
+    "xi-": { "name": "Xi-", "symbol": "Ξ-", "content": ["d", "s", "s"], "mass_mev": 1321.71, "spin2": 1, "jpi": "1/2+", "lifetime_s": 1.639e-10, "sector": "bárion" },
+    "omega-": { "name": "Omega-", "symbol": "Ω-", "content": ["s", "s", "s"], "mass_mev": 1672.45, "spin2": 3, "jpi": "3/2+", "lifetime_s": 8.21e-11, "sector": "bárion" },
+    "delta++": { "name": "Delta++", "symbol": "Δ++", "content": ["u", "u", "u"], "mass_mev": 1232.0, "spin2": 3, "jpi": "3/2+", "lifetime_s": 5.6e-24, "sector": "bárion" },
+    "delta+": { "name": "Delta+", "symbol": "Δ+", "content": ["u", "u", "d"], "mass_mev": 1232.0, "spin2": 3, "jpi": "3/2+", "lifetime_s": 5.6e-24, "sector": "bárion" },
+    "pion+": { "name": "píon", "symbol": "π+", "content": ["u", "d_bar"], "mass_mev": 139.57039, "spin2": 0, "jpi": "0-", "lifetime_s": 2.6033e-8, "sector": "méson" },
+    "pion-": { "name": "píon", "symbol": "π-", "content": ["d", "u_bar"], "mass_mev": 139.57039, "spin2": 0, "jpi": "0-", "lifetime_s": 2.6033e-8, "sector": "méson" },
+    "pion0": { "name": "píon neutro", "symbol": "π0", "content": ["u", "u_bar"], "mass_mev": 134.9768, "spin2": 0, "jpi": "0-+", "lifetime_s": 8.52e-17, "sector": "méson" },
+    "kaon+": { "name": "káon", "symbol": "K+", "content": ["u", "s_bar"], "mass_mev": 493.677, "spin2": 0, "jpi": "0-", "lifetime_s": 1.2380e-8, "sector": "méson" },
+    "kaon-": { "name": "káon", "symbol": "K-", "content": ["s", "u_bar"], "mass_mev": 493.677, "spin2": 0, "jpi": "0-", "lifetime_s": 1.2380e-8, "sector": "méson" },
+    "kaon0": { "name": "káon neutro", "symbol": "K0", "content": ["d", "s_bar"], "mass_mev": 497.611, "spin2": 0, "jpi": "0-", "lifetime_s": 8.954e-11, "sector": "méson" },
+    "rho+": { "name": "rho", "symbol": "ρ+", "content": ["u", "d_bar"], "mass_mev": 775.26, "spin2": 2, "jpi": "1-", "lifetime_s": 4.5e-24, "sector": "méson" },
+    "phi": { "name": "phi", "symbol": "φ", "content": ["s", "s_bar"], "mass_mev": 1019.461, "spin2": 2, "jpi": "1--", "lifetime_s": 1.55e-22, "sector": "méson" },
+    "Jpsi": { "name": "J/psi", "symbol": "J/ψ", "content": ["c", "c_bar"], "mass_mev": 3096.900, "spin2": 2, "jpi": "1--", "lifetime_s": 7.1e-21, "sector": "méson" },
+    "upsilon": { "name": "Upsilon", "symbol": "Υ", "content": ["b", "b_bar"], "mass_mev": 9460.30, "spin2": 2, "jpi": "1--", "lifetime_s": 1.22e-20, "sector": "méson" },
+    "D+": { "name": "D+", "symbol": "D+", "content": ["c", "d_bar"], "mass_mev": 1869.66, "spin2": 0, "jpi": "0-", "lifetime_s": 1.033e-12, "sector": "méson" },
+    "B+": { "name": "B+", "symbol": "B+", "content": ["u", "b_bar"], "mass_mev": 5279.34, "spin2": 0, "jpi": "0-", "lifetime_s": 1.638e-12, "sector": "méson" },
+    "X3872": { "name": "X(3872) tetraquark", "symbol": "X(3872)", "content": ["c", "c_bar", "u", "u_bar"], "mass_mev": 3871.65, "spin2": 2, "jpi": "1++", "lifetime_s": 1.0e-23, "sector": "tetraquark" },
+    "Pc4312": { "name": "P_c(4312)+ pentaquark", "symbol": "P_c(4312)+", "content": ["u", "u", "d", "c", "c_bar"], "mass_mev": 4311.9, "spin2": 1, "jpi": "1/2-", "lifetime_s": 1.0e-23, "sector": "pentaquark" }
+  }
+}

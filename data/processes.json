@@ -1,0 +1,113 @@
+{
+  "meta": {
+    "description": "Processos de partículas para o validador de leis de conservação (Fase 5).",
+    "expected": "permitida | proibida",
+    "virtual": "true quando há bósons virtuais (fora da camada de massa) — desliga a checagem de energia"
+  },
+  "processes": {
+    "neutron_beta": {
+      "name": "Decaimento beta do nêutron",
+      "equation": "n → p + e⁻ + ν̄ₑ",
+      "initial": ["neutron"],
+      "final": ["proton", "e-", "nu_e_bar"],
+      "weak": true, "virtual": false, "expected": "permitida",
+      "note": "Interação fraca muda o sabor do quark d → u via bóson W⁻. Bárion e carga conservados; o ν̄ₑ carrega o número leptônico."
+    },
+    "muon_decay": {
+      "name": "Decaimento do múon",
+      "equation": "μ⁻ → e⁻ + ν̄ₑ + ν_μ",
+      "initial": ["mu-"],
+      "final": ["e-", "nu_e_bar", "nu_mu"],
+      "weak": true, "virtual": false, "expected": "permitida",
+      "note": "Dois neutrinos preservam o número leptônico por família: Le e Lμ."
+    },
+    "pion_decay": {
+      "name": "Decaimento do píon carregado",
+      "equation": "π⁺ → μ⁺ + ν_μ",
+      "initial": ["pion+"],
+      "final": ["mu+", "nu_mu"],
+      "weak": true, "virtual": false, "expected": "permitida",
+      "note": "Decaimento fraco do quark: u·d̄ → μ⁺ν_μ."
+    },
+    "pion0_decay": {
+      "name": "Decaimento do píon neutro",
+      "equation": "π⁰ → γ + γ",
+      "initial": ["pion0"],
+      "final": ["gamma", "gamma"],
+      "weak": false, "virtual": false, "expected": "permitida",
+      "note": "Processo eletromagnético (anomalia). Fótons têm energia ~67,5 MeV cada."
+    },
+    "electron_annihilation": {
+      "name": "Aniquilação elétron-pósitron",
+      "equation": "e⁻ + e⁺ → γ + γ",
+      "initial": ["e-", "e+"],
+      "final": ["gamma", "gamma"],
+      "weak": false, "virtual": false, "expected": "permitida",
+      "note": "511 keV por fóton. Conserva carga (0→0) e número leptônico (0→0)."
+    },
+    "proton_antiproton_pions": {
+      "name": "Aniquilação próton-antipróton",
+      "equation": "p + p̄ → π⁺ + π⁻ + π⁰",
+      "initial": ["proton", "anti_proton"],
+      "final": ["pion+", "pion-", "pion0"],
+      "weak": false, "virtual": false, "expected": "permitida",
+      "note": "Processo FORTE: bárion total 1 + (−1) = 0; carga 0. Sabor conservado."
+    },
+    "quark_beta": {
+      "name": "Decaimento beta do quark",
+      "equation": "d → u + W⁻",
+      "initial": ["d"],
+      "final": ["u", "W-"],
+      "weak": true, "virtual": true, "expected": "permitida",
+      "note": "Sub-processo elementar da fraqueza. O W⁻ é VIRTUAL (fora da camada de massa), por isso a checagem de energia é desativada."
+    },
+    "lambda_decay": {
+      "name": "Decaimento do Lambda",
+      "equation": "Λ⁰ → p + π⁻",
+      "initial": ["lambda0"],
+      "final": ["proton", "pion-"],
+      "weak": true, "virtual": false, "expected": "permitida",
+      "note": "ΔS = +1: a estranheza NÃO se conserva — só possível pela interação fraca."
+    },
+    "omega_decay": {
+      "name": "Decaimento do Omega-",
+      "equation": "Ω⁻ → Λ⁰ + K⁻",
+      "initial": ["omega-"],
+      "final": ["lambda0", "kaon-"],
+      "weak": true, "virtual": false, "expected": "permitida",
+      "note": "ΔS = +1 (Ω⁻ tem S=−3; Λ⁰ + K⁻ somam S=−2). Interação fraca."
+    },
+    "forbidden_missing_nu": {
+      "name": "Beta sem (anti)neutrino",
+      "equation": "n → p + e⁻",
+      "initial": ["neutron"],
+      "final": ["proton", "e-"],
+      "weak": true, "virtual": false, "expected": "proibida",
+      "note": "Falta o ν̄ₑ: o número leptônico eletrônico iria de 0 para +1."
+    },
+    "forbidden_proton_decay": {
+      "name": "Decaimento do próton (livre)",
+      "equation": "p → e⁺ + γ",
+      "initial": ["proton"],
+      "final": ["e+", "gamma"],
+      "weak": false, "virtual": false, "expected": "proibida",
+      "note": "Violaria o número bariônico (1→0) e o leptônico (0→−1). O próton é estável no Modelo Padrão."
+    },
+    "forbidden_flavor_strong": {
+      "name": "Mudança de sabor sem corrente fraca",
+      "equation": "Λ⁰ → p + π⁻  (interação forte)",
+      "initial": ["lambda0"],
+      "final": ["proton", "pion-"],
+      "weak": false, "virtual": false, "expected": "proibida",
+      "note": "A interação forte conserva sabor: a estranheza iria de −1 para 0."
+    },
+    "forbidden_energy": {
+      "name": "Criação de massa do nada",
+      "equation": "π⁰ → p + p̄",
+      "initial": ["pion0"],
+      "final": ["proton", "anti_proton"],
+      "weak": false, "virtual": false, "expected": "proibida",
+      "note": "A massa final (1877 MeV) excede a inicial (135 MeV). Violação de energia."
+    }
+  }
+}

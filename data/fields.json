@@ -1,0 +1,24 @@
+{
+  "meta": {
+    "description": "FASE 8 — Sondas de campo: efeitos Zeeman (magnético) e Stark (elétrico).",
+    "sources": "CODATA 2018 (μ_B, a₀, ε₀, e); volumes de polarizabilidade atômica são valores de referência (literatura).",
+    "units": { "energy_ev": "eV", "b_field_t": "tesla", "e_field_vm": "V/m", "alpha_volume": "Å³" }
+  },
+  "constants": {
+    "mu_b_ev_t": 5.7883818060e-5,
+    "bohr_radius_m": 5.29177210903e-11,
+    "epsilon_0": 8.8541878128e-12,
+    "e_charge": 1.602176634e-19,
+    "hc_ev_m": 1.239841984e-6
+  },
+  "polarizability_volume_ang3": {
+    "H": 0.6668,
+    "He": 0.2049,
+    "Li": 24.2,
+    "Na": 24.1,
+    "K": 43.4,
+    "Rb": 47.2,
+    "Cs": 59.4
+  },
+  "note_polarizability": "Volumes de polarizabilidade atômica (α'/4πε₀), ordem de grandeza de referência; usados no efeito Stark quadrático."
+}

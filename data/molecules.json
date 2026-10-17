@@ -1,0 +1,127 @@
+{
+  "meta": {
+    "source": "Dados experimentais de referência",
+    "citation": "NIST Chemistry WebBook / NIST CCCBDB; comprimentos e energias de ligação e ângulos (valores de equilíbrio em fase gasosa)",
+    "units": { "bond_length_pm": "pm", "bond_angle_deg": "graus", "bond_energy_ev": "eV por ligação (energia de dissociação)", "dipole_debye": "D" },
+    "note": "Bond order é validado pelo modelo LCAO-MO (diatômicos) ou informado (poli-atômicos)."
+  },
+  "molecules": {
+    "H2": {
+      "name": "Hidrogênio molecular", "formula": "H₂", "atoms": ["H", "H"],
+      "bonds": [[0, 1, 1]], "geometry": "linear", "bond_length_pm": 74.14,
+      "bond_order": 1, "bond_energy_ev": 4.52, "dipole_debye": 0.0,
+      "hybridization": "s", "phase": "gás", "note": "Ligação σ mais simples; ordem 1."
+    },
+    "He2": {
+      "name": "Dihélio", "formula": "He₂", "atoms": ["He", "He"],
+      "bonds": [], "geometry": "linear", "bond_length_pm": null,
+      "bond_order": 0, "bond_energy_ev": 0.0, "dipole_debye": 0.0,
+      "hybridization": "s", "phase": "não liga", "note": "Ordem de ligação 0 — σ*1s cheio repele; não forma ligação."
+    },
+    "Li2": {
+      "name": "Dilítio", "formula": "Li₂", "atoms": ["Li", "Li"],
+      "bonds": [[0, 1, 1]], "geometry": "linear", "bond_length_pm": 267.3,
+      "bond_order": 1, "bond_energy_ev": 1.05, "dipole_debye": 0.0,
+      "hybridization": "s", "phase": "gás", "note": "σ2s² → ordem 1 (ligação fraca)."
+    },
+    "Be2": {
+      "name": "Diberílio", "formula": "Be₂", "atoms": ["Be", "Be"],
+      "bonds": [], "geometry": "linear", "bond_length_pm": null,
+      "bond_order": 0, "bond_energy_ev": 0.0, "dipole_debye": 0.0,
+      "hybridization": "s", "phase": "não liga", "note": "σ2s²σ*2s² → ordem 0."
+    },
+    "B2": {
+      "name": "Diboro", "formula": "B₂", "atoms": ["B", "B"],
+      "bonds": [[0, 1, 1]], "geometry": "linear", "bond_length_pm": 159.0,
+      "bond_order": 1, "bond_energy_ev": 2.85, "dipole_debye": 0.0,
+      "hybridization": "p", "phase": "gás", "note": "π2p² com Hund → 2 elétrons desemparelhados; paramagnético."
+    },
+    "C2": {
+      "name": "Dicarbono", "formula": "C₂", "atoms": ["C", "C"],
+      "bonds": [[0, 1, 2]], "geometry": "linear", "bond_length_pm": 124.25,
+      "bond_order": 2, "bond_energy_ev": 6.32, "dipole_debye": 0.0,
+      "hybridization": "p", "phase": "gás", "note": "π2p⁴ → ordem 2, diamagnético."
+    },
+    "N2": {
+      "name": "Nitrogênio molecular", "formula": "N₂", "atoms": ["N", "N"],
+      "bonds": [[0, 1, 3]], "geometry": "linear", "bond_length_pm": 109.76,
+      "bond_order": 3, "bond_energy_ev": 9.79, "dipole_debye": 0.0,
+      "hybridization": "p", "phase": "gás", "note": "Tripla ligação; HOMO σ2p; molécula muito estável."
+    },
+    "O2": {
+      "name": "Oxigênio molecular", "formula": "O₂", "atoms": ["O", "O"],
+      "bonds": [[0, 1, 2]], "geometry": "linear", "bond_length_pm": 120.74,
+      "bond_order": 2, "bond_energy_ev": 5.16, "dipole_debye": 0.0,
+      "hybridization": "p", "phase": "gás", "note": "π*2p² com Hund → 2 elétrons desemparelhados; paramagnético."
+    },
+    "F2": {
+      "name": "Flúor molecular", "formula": "F₂", "atoms": ["F", "F"],
+      "bonds": [[0, 1, 1]], "geometry": "linear", "bond_length_pm": 141.19,
+      "bond_order": 1, "bond_energy_ev": 1.65, "dipole_debye": 0.0,
+      "hybridization": "p", "phase": "gás", "note": "π*2p cheio → ligação simples fraca."
+    },
+    "Ne2": {
+      "name": "Dineônio", "formula": "Ne₂", "atoms": ["Ne", "Ne"],
+      "bonds": [], "geometry": "linear", "bond_length_pm": null,
+      "bond_order": 0, "bond_energy_ev": 0.0, "dipole_debye": 0.0,
+      "hybridization": "p", "phase": "não liga", "note": "Camada cheia → ordem 0."
+    },
+    "CO": {
+      "name": "Monóxido de carbono", "formula": "CO", "atoms": ["C", "O"],
+      "bonds": [[0, 1, 3]], "geometry": "linear", "bond_length_pm": 112.83,
+      "bond_order": 3, "bond_energy_ev": 11.11, "dipole_debye": 0.112,
+      "hybridization": "p", "phase": "gás", "note": "Isolétrônico a N₂; ligação tripla, pequeno dipolo."
+    },
+    "HF": {
+      "name": "Fluoreto de hidrogênio", "formula": "HF", "atoms": ["H", "F"],
+      "bonds": [[0, 1, 1]], "geometry": "linear", "bond_length_pm": 91.68,
+      "bond_order": 1, "bond_energy_ev": 5.87, "dipole_debye": 1.826,
+      "hybridization": "sp", "phase": "gás", "note": "Ligação polar; ΔEN grande → caráter iônico parcial."
+    },
+    "HCl": {
+      "name": "Cloreto de hidrogênio", "formula": "HCl", "atoms": ["H", "Cl"],
+      "bonds": [[0, 1, 1]], "geometry": "linear", "bond_length_pm": 127.46,
+      "bond_order": 1, "bond_energy_ev": 4.47, "dipole_debye": 1.109,
+      "hybridization": "sp", "phase": "gás", "note": "Covalente polar (ΔEN ≈ 1,0)."
+    },
+    "H2O": {
+      "name": "Água", "formula": "H₂O", "atoms": ["O", "H", "H"],
+      "bonds": [[0, 1, 1], [0, 2, 1]], "geometry": "bent",
+      "bond_length_pm": 95.84, "bond_angle_deg": 104.45,
+      "bond_order": 1, "bond_energy_ev": 4.80, "dipole_debye": 1.85,
+      "hybridization": "sp³", "lone_pairs": 2, "phase": "líquida",
+      "note": "Angular ~104,5° (dois pares isolados comprimem o ângulo ideal de 109,5°)."
+    },
+    "NH3": {
+      "name": "Amônia", "formula": "NH₃", "atoms": ["N", "H", "H", "H"],
+      "bonds": [[0, 1, 1], [0, 2, 1], [0, 3, 1]], "geometry": "trigonal_pyramidal",
+      "bond_length_pm": 101.7, "bond_angle_deg": 107.8,
+      "bond_order": 1, "bond_energy_ev": 4.05, "dipole_debye": 1.47,
+      "hybridization": "sp³", "lone_pairs": 1, "phase": "gás",
+      "note": "Piramidal trigonal ~107,8° (um par isolado)."
+    },
+    "CH4": {
+      "name": "Metano", "formula": "CH₄", "atoms": ["C", "H", "H", "H", "H"],
+      "bonds": [[0, 1, 1], [0, 2, 1], [0, 3, 1], [0, 4, 1]], "geometry": "tetrahedral",
+      "bond_length_pm": 108.7, "bond_angle_deg": 109.47,
+      "bond_order": 1, "bond_energy_ev": 4.28, "dipole_debye": 0.0,
+      "hybridization": "sp³", "lone_pairs": 0, "phase": "gás",
+      "note": "Tetraédrico 109,47°; sp³; apolar por simetria."
+    },
+    "CO2": {
+      "name": "Dióxido de carbono", "formula": "CO₂", "atoms": ["C", "O", "O"],
+      "bonds": [[0, 1, 2], [0, 2, 2]], "geometry": "linear",
+      "bond_length_pm": 116.3, "bond_angle_deg": 180.0,
+      "bond_order": 2, "bond_energy_ev": 8.28, "dipole_debye": 0.0,
+      "hybridization": "sp", "lone_pairs": 0, "phase": "gás",
+      "note": "Linear 180°; duas ligações duplas C=O; apolar."
+    },
+    "NaCl": {
+      "name": "Cloreto de sódio", "formula": "NaCl", "atoms": ["Na", "Cl"],
+      "bonds": [[0, 1, 1]], "geometry": "linear", "bond_length_pm": 236.1,
+      "bond_order": 1, "bond_energy_ev": 4.26, "dipole_debye": 9.0,
+      "hybridization": "iônico", "phase": "sólido iônico",
+      "note": "ΔEN ≈ 2,2 → ligação iônica (transferência de elétron), retículo cristalino."
+    }
+  }
+}
